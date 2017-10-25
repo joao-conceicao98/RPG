@@ -1,81 +1,33 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <resource_file type="PackedScene" subresource_count="17" version="2.1" version_name="Godot Engine v2.1.4.stable.official">
 	<ext_resource path="res://scripts/player.gd" type="Script" index="0"></ext_resource>
-	<ext_resource path="res://sprites/Player/player_D.png" type="Texture" index="3"></ext_resource>
-	<ext_resource path="res://sprites/Player/player_D_1.png" type="Texture" index="10"></ext_resource>
-	<ext_resource path="res://sprites/Player/player_D_2.png" type="Texture" index="11"></ext_resource>
-	<ext_resource path="res://sprites/player_U.tex" type="Texture" index="2"></ext_resource>
+	<ext_resource path="res://sprites/Player/player_D.png" type="Texture" index="6"></ext_resource>
+	<ext_resource path="res://sprites/Player/player_L_1.png" type="Texture" index="11"></ext_resource>
+	<ext_resource path="res://sprites/Player/player_U_2.tex" type="Texture" index="4"></ext_resource>
+	<ext_resource path="res://imagens/Alien_1.tex" type="Texture" index="1"></ext_resource>
+	<ext_resource path="res://sprites/Player/player_L.png" type="Texture" index="12"></ext_resource>
+	<ext_resource path="res://sprites/Player/player_R.png" type="Texture" index="9"></ext_resource>
+	<ext_resource path="res://sprites/Player/player_U_1.tex" type="Texture" index="2"></ext_resource>
 	<ext_resource path="res://sprites/Player/player_R_1.png" type="Texture" index="8"></ext_resource>
-	<ext_resource path="res://sprites/player_U_2.tex" type="Texture" index="7"></ext_resource>
-	<ext_resource path="res://sprites/player_U_1.tex" type="Texture" index="6"></ext_resource>
-	<ext_resource path="res://sprites/Player/player_R_2.png" type="Texture" index="9"></ext_resource>
+	<ext_resource path="res://sprites/Player/player_U.tex" type="Texture" index="3"></ext_resource>
+	<ext_resource path="res://sprites/Player/player_D_2.png" type="Texture" index="7"></ext_resource>
 	<ext_resource path="res://sprites/Player/player_L_2.png" type="Texture" index="13"></ext_resource>
-	<ext_resource path="res://sprites/Player/player_L.png" type="Texture" index="5"></ext_resource>
-	<ext_resource path="res://sprites/Player/player_R.png" type="Texture" index="4"></ext_resource>
-	<ext_resource path="res://sprites/Player/player_L_1.png" type="Texture" index="12"></ext_resource>
-	<ext_resource path="res://Alien_1.tex" type="Texture" index="1"></ext_resource>
+	<ext_resource path="res://sprites/Player/player_D_1.png" type="Texture" index="5"></ext_resource>
+	<ext_resource path="res://sprites/Player/player_R_2.png" type="Texture" index="10"></ext_resource>
 	<resource type="RectangleShape2D" path="local://1">
 		<real name="custom_solver_bias"> 0 </real>
-		<vector2 name="extents"> 16, 16 </vector2>
+		<vector2 name="extents"> 14.9614, 16 </vector2>
 
 	</resource>
 	<resource type="SpriteFrames" path="local://2">
 		<array name="animations" len="8" shared="false">
 			<dictionary  shared="false">
 				<string> "frames" </string>
-				<array  len="1" shared="false">
-					<resource  external="2">  </resource>
-				</array>
-				<string> "loop" </string>
-				<bool> True </bool>
-				<string> "name" </string>
-				<string> "Idle_U" </string>
-				<string> "speed" </string>
-				<real> 5 </real>
-			</dictionary>
-			<dictionary  shared="false">
-				<string> "frames" </string>
-				<array  len="1" shared="false">
-					<resource  external="3">  </resource>
-				</array>
-				<string> "loop" </string>
-				<bool> True </bool>
-				<string> "name" </string>
-				<string> "Idle_D" </string>
-				<string> "speed" </string>
-				<real> 5 </real>
-			</dictionary>
-			<dictionary  shared="false">
-				<string> "frames" </string>
-				<array  len="1" shared="false">
-					<resource  external="4">  </resource>
-				</array>
-				<string> "loop" </string>
-				<bool> True </bool>
-				<string> "name" </string>
-				<string> "Idle_R" </string>
-				<string> "speed" </string>
-				<real> 5 </real>
-			</dictionary>
-			<dictionary  shared="false">
-				<string> "frames" </string>
-				<array  len="1" shared="false">
-					<resource  external="5">  </resource>
-				</array>
-				<string> "loop" </string>
-				<bool> True </bool>
-				<string> "name" </string>
-				<string> "Idle_L" </string>
-				<string> "speed" </string>
-				<real> 5 </real>
-			</dictionary>
-			<dictionary  shared="false">
-				<string> "frames" </string>
 				<array  len="4" shared="false">
-					<resource  external="6">  </resource>
 					<resource  external="2">  </resource>
-					<resource  external="7">  </resource>
-					<resource  external="2">  </resource>
+					<resource  external="3">  </resource>
+					<resource  external="4">  </resource>
+					<resource  external="3">  </resource>
 				</array>
 				<string> "loop" </string>
 				<bool> True </bool>
@@ -86,26 +38,23 @@
 			</dictionary>
 			<dictionary  shared="false">
 				<string> "frames" </string>
-				<array  len="4" shared="false">
-					<resource  external="8">  </resource>
-					<resource  external="4">  </resource>
-					<resource  external="9">  </resource>
-					<resource  external="4">  </resource>
+				<array  len="1" shared="false">
+					<resource  external="3">  </resource>
 				</array>
 				<string> "loop" </string>
 				<bool> True </bool>
 				<string> "name" </string>
-				<string> "Walk_R" </string>
+				<string> "Idle_U" </string>
 				<string> "speed" </string>
-				<real> 8 </real>
+				<real> 5 </real>
 			</dictionary>
 			<dictionary  shared="false">
 				<string> "frames" </string>
 				<array  len="4" shared="false">
-					<resource  external="10">  </resource>
-					<resource  external="3">  </resource>
-					<resource  external="11">  </resource>
-					<resource  external="3">  </resource>
+					<resource  external="5">  </resource>
+					<resource  external="6">  </resource>
+					<resource  external="7">  </resource>
+					<resource  external="6">  </resource>
 				</array>
 				<string> "loop" </string>
 				<bool> True </bool>
@@ -117,10 +66,37 @@
 			<dictionary  shared="false">
 				<string> "frames" </string>
 				<array  len="4" shared="false">
+					<resource  external="8">  </resource>
+					<resource  external="9">  </resource>
+					<resource  external="10">  </resource>
+					<resource  external="9">  </resource>
+				</array>
+				<string> "loop" </string>
+				<bool> True </bool>
+				<string> "name" </string>
+				<string> "Walk_R" </string>
+				<string> "speed" </string>
+				<real> 8 </real>
+			</dictionary>
+			<dictionary  shared="false">
+				<string> "frames" </string>
+				<array  len="1" shared="false">
+					<resource  external="9">  </resource>
+				</array>
+				<string> "loop" </string>
+				<bool> True </bool>
+				<string> "name" </string>
+				<string> "Idle_R" </string>
+				<string> "speed" </string>
+				<real> 5 </real>
+			</dictionary>
+			<dictionary  shared="false">
+				<string> "frames" </string>
+				<array  len="4" shared="false">
+					<resource  external="11">  </resource>
 					<resource  external="12">  </resource>
-					<resource  external="5">  </resource>
 					<resource  external="13">  </resource>
-					<resource  external="5">  </resource>
+					<resource  external="12">  </resource>
 				</array>
 				<string> "loop" </string>
 				<bool> True </bool>
@@ -128,6 +104,30 @@
 				<string> "Walk_L" </string>
 				<string> "speed" </string>
 				<real> 8 </real>
+			</dictionary>
+			<dictionary  shared="false">
+				<string> "frames" </string>
+				<array  len="1" shared="false">
+					<resource  external="12">  </resource>
+				</array>
+				<string> "loop" </string>
+				<bool> True </bool>
+				<string> "name" </string>
+				<string> "Idle_L" </string>
+				<string> "speed" </string>
+				<real> 5 </real>
+			</dictionary>
+			<dictionary  shared="false">
+				<string> "frames" </string>
+				<array  len="1" shared="false">
+					<resource  external="6">  </resource>
+				</array>
+				<string> "loop" </string>
+				<bool> True </bool>
+				<string> "name" </string>
+				<string> "Idle_D" </string>
+				<string> "speed" </string>
+				<real> 5 </real>
 			</dictionary>
 		</array>
 
@@ -142,8 +142,9 @@
 			<array  len="0" shared="false">
 			</array>
 			<string> "names" </string>
-			<string_array  len="45">
+			<string_array  len="76">
 				<string> "player" </string>
+				<string> "transform/pos" </string>
 				<string> "input/pickable" </string>
 				<string> "shapes/0/shape" </string>
 				<string> "shapes/0/transform" </string>
@@ -155,7 +156,6 @@
 				<string> "MOTION_SPEED" </string>
 				<string> "KinematicBody2D" </string>
 				<string> "Camera2D" </string>
-				<string> "transform/pos" </string>
 				<string> "transform/scale" </string>
 				<string> "anchor_mode" </string>
 				<string> "rotating" </string>
@@ -180,47 +180,92 @@
 				<string> "shape" </string>
 				<string> "trigger" </string>
 				<string> "_update_shape_index" </string>
-				<string> "RayCast2D" </string>
+				<string> "AnimatedSprite" </string>
+				<string> "frames" </string>
+				<string> "animation" </string>
+				<string> "RayNodeDown" </string>
 				<string> "enabled" </string>
 				<string> "cast_to" </string>
 				<string> "layer_mask" </string>
 				<string> "type_mask" </string>
-				<string> "AnimatedSprite" </string>
-				<string> "frames" </string>
-				<string> "animation" </string>
+				<string> "RayCast2D" </string>
+				<string> "RayNodeUp" </string>
+				<string> "transform/rot" </string>
+				<string> "RayNodeLeft" </string>
+				<string> "RayNodeRight" </string>
+				<string> "ataques" </string>
+				<string> "Node" </string>
+				<string> "ataque1_timer" </string>
+				<string> "process_mode" </string>
+				<string> "wait_time" </string>
+				<string> "one_shot" </string>
+				<string> "autostart" </string>
+				<string> "Timer" </string>
+				<string> "ProgressBar" </string>
+				<string> "visibility/opacity" </string>
+				<string> "focus/ignore_mouse" </string>
+				<string> "focus/stop_mouse" </string>
+				<string> "size_flags/horizontal" </string>
+				<string> "size_flags/vertical" </string>
+				<string> "margin/left" </string>
+				<string> "margin/top" </string>
+				<string> "margin/right" </string>
+				<string> "margin/bottom" </string>
+				<string> "range/min" </string>
+				<string> "range/max" </string>
+				<string> "range/step" </string>
+				<string> "range/page" </string>
+				<string> "range/value" </string>
+				<string> "range/exp_edit" </string>
+				<string> "range/rounded" </string>
+				<string> "percent/visible" </string>
 			</string_array>
 			<string> "node_count" </string>
-			<int> 6 </int>
+			<int> 12 </int>
 			<string> "node_paths" </string>
 			<array  len="0" shared="false">
 			</array>
 			<string> "nodes" </string>
-			<int_array  len="122"> 				-1, -1, 10, 0, -1, 9, 1, 0, 2, 1, 3, 2, 4, 0, 5, 3, 6, 3, 7, 4, 8, 5, 9, 6, 0, 0, 0, 11, 11, -1, 18, 12, 7, 13, 8, 14, 9, 15, 0, 16, 10, 17, 11, 18, 12, 19, 12, 20, 13, 21, 13, 22, 10, 23, 10, 24, 0, 25, 14, 26, 15, 27, 15, 28, 15, 29, 15, 0, 0, 0, 30, 30, -1, 3, 31, 0, 12, 16, 32, 17, 0, 0, 0, 33, 33, -1, 3, 34, 1, 35, 0, 36, 9, 0, 0, 0, 37, 37, -1, 4, 38, 0, 39, 18, 40, 3, 41, 19, 0, 0, 0, 42, 42, -1, 3, 12, 20, 43, 21, 44, 22, 0 </int_array>
+			<int_array  len="242"> 				-1, -1, 11, 0, -1, 10, 1, 0, 2, 1, 3, 2, 4, 3, 5, 1, 6, 4, 7, 4, 8, 5, 9, 6, 10, 7, 0, 0, 0, 12, 12, -1, 18, 1, 8, 13, 9, 14, 4, 15, 1, 16, 10, 17, 11, 18, 12, 19, 12, 20, 13, 21, 13, 22, 10, 23, 10, 24, 1, 25, 14, 26, 15, 27, 15, 28, 15, 29, 15, 0, 0, 0, 30, 30, -1, 3, 31, 1, 1, 16, 32, 17, 0, 0, 0, 33, 33, -1, 5, 1, 18, 13, 19, 34, 2, 35, 1, 36, 20, 0, 0, 0, 37, 37, -1, 3, 1, 21, 38, 22, 39, 23, 0, 0, 0, 45, 40, -1, 4, 41, 1, 42, 24, 43, 4, 44, 25, 0, 0, 0, 45, 46, -1, 5, 47, 26, 41, 1, 42, 24, 43, 4, 44, 25, 0, 0, 0, 45, 48, -1, 5, 47, 27, 41, 1, 42, 24, 43, 4, 44, 25, 0, 0, 0, 45, 49, -1, 5, 47, 28, 41, 1, 42, 24, 43, 4, 44, 25, 0, 0, 0, 51, 50, -1, 0, 0, 0, 0, 57, 52, -1, 4, 53, 4, 54, 29, 55, 10, 56, 1, 0, 0, 0, 58, 58, -1, 17, 59, 30, 60, 1, 61, 10, 62, 31, 63, 20, 64, 32, 65, 33, 66, 34, 67, 35, 68, 15, 69, 36, 70, 29, 71, 15, 72, 36, 73, 1, 74, 1, 75, 10, 0 </int_array>
 			<string> "variants" </string>
-			<array  len="23" shared="false">
+			<array  len="37" shared="false">
+				<vector2> 57.7034, 54.0202 </vector2>
 				<bool> False </bool>
 				<resource  resource_type="Shape2D" path="local://1">  </resource>
-				<matrix32> 1, -0, 0, 1, 0, 0 </matrix32>
+				<matrix32> 0.966874, -0, 0, 1, -2.3987, 0.598732 </matrix32>
 				<int> 1 </int>
 				<real> 0.08 </real>
 				<resource  external="0">  </resource>
-				<int> 200 </int>
-				<vector2> -400, -240 </vector2>
+				<int> 140 </int>
+				<vector2> -0.277435, -9.18202 </vector2>
 				<vector2> 0.5, 0.75 </vector2>
-				<int> 0 </int>
 				<bool> True </bool>
-				<vector2> 0.8, 0.8 </vector2>
+				<vector2> 0.6, 0.6 </vector2>
 				<int> -10000000 </int>
 				<int> 10000000 </int>
 				<real> 5 </real>
-				<real> 0.2 </real>
+				<real> 0 </real>
 				<vector2> 0, -15.4044 </vector2>
 				<resource  external="1">  </resource>
-				<vector2> 0, 50 </vector2>
-				<int> 15 </int>
+				<vector2> -2.3987, 0.598732 </vector2>
+				<vector2> 0.966874, 1 </vector2>
+				<int> 0 </int>
 				<vector2> -3.521, -17.1649 </vector2>
 				<resource  resource_type="SpriteFrames" path="local://2">  </resource>
 				<string> "Walk_D" </string>
+				<vector2> 0, 50 </vector2>
+				<int> 15 </int>
+				<real> 180 </real>
+				<real> -90 </real>
+				<real> 90 </real>
+				<real> 1 </real>
+				<real> 0.5 </real>
+				<int> 2 </int>
+				<real> -22 </real>
+				<real> -50 </real>
+				<real> 20 </real>
+				<real> -34 </real>
+				<real> 100 </real>
 			</array>
 			<string> "version" </string>
 			<int> 2 </int>
