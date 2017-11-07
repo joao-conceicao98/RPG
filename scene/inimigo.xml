@@ -17,12 +17,12 @@
 			<string> "conn_count" </string>
 			<int> 2 </int>
 			<string> "conns" </string>
-			<int_array  len="12"> 				7, 0, 54, 53, 2, 0, 9, 0, 56, 55, 2, 0 </int_array>
+			<int_array  len="12"> 				7, 0, 51, 50, 2, 0, 9, 0, 53, 52, 2, 0 </int_array>
 			<string> "editable_instances" </string>
 			<array  len="0" shared="false">
 			</array>
 			<string> "names" </string>
-			<string_array  len="57">
+			<string_array  len="54">
 				<string> "inimigo1" </string>
 				<string> "input/pickable" </string>
 				<string> "shapes/0/shape" </string>
@@ -73,23 +73,20 @@
 				<string> "range/exp_edit" </string>
 				<string> "range/rounded" </string>
 				<string> "percent/visible" </string>
-				<string> "PopupDialog" </string>
-				<string> "visibility/visible" </string>
-				<string> "popup/exclusive" </string>
 				<string> "_on_Area2D_area_enter" </string>
 				<string> "area_enter" </string>
 				<string> "_on_ProgressBar_value_changed" </string>
 				<string> "value_changed" </string>
 			</string_array>
 			<string> "node_count" </string>
-			<int> 11 </int>
+			<int> 10 </int>
 			<string> "node_paths" </string>
 			<array  len="0" shared="false">
 			</array>
 			<string> "nodes" </string>
-			<int_array  len="221"> 				-1, -1, 9, 0, -1, 8, 1, 0, 2, 1, 3, 2, 4, 0, 5, 3, 6, 3, 7, 4, 8, 5, 0, 0, 0, 10, 10, -1, 4, 11, 6, 12, 1, 13, 0, 14, 7, 0, 0, 0, 15, 15, -1, 2, 11, 8, 16, 9, 0, 0, 0, 23, 17, -1, 5, 18, 10, 19, 0, 20, 11, 21, 3, 22, 12, 0, 0, 0, 23, 24, -1, 4, 19, 0, 20, 11, 21, 3, 22, 12, 0, 0, 0, 23, 25, -1, 5, 18, 13, 19, 0, 20, 11, 21, 3, 22, 12, 0, 0, 0, 23, 26, -1, 5, 18, 14, 19, 0, 20, 11, 21, 3, 22, 12, 0, 0, 0, 27, 27, -1, 8, 1, 15, 2, 16, 3, 17, 4, 0, 28, 18, 29, 19, 30, 20, 31, 21, 0, 7, 0, 10, 10, -1, 4, 11, 22, 12, 16, 13, 0, 14, 7, 0, 7, 0, 32, 32, -1, 17, 33, 23, 34, 0, 35, 15, 36, 24, 37, 7, 38, 25, 39, 26, 40, 27, 41, 28, 42, 29, 43, 30, 44, 21, 45, 29, 46, 30, 47, 0, 48, 0, 49, 15, 0, 7, 0, 50, 50, -1, 10, 51, 0, 34, 0, 35, 15, 36, 24, 37, 24, 38, 25, 39, 31, 40, 32, 41, 33, 52, 0, 0 </int_array>
+			<int_array  len="194"> 				-1, -1, 9, 0, -1, 8, 1, 0, 2, 1, 3, 2, 4, 0, 5, 3, 6, 3, 7, 4, 8, 5, 0, 0, 0, 10, 10, -1, 4, 11, 6, 12, 1, 13, 0, 14, 7, 0, 0, 0, 15, 15, -1, 2, 11, 8, 16, 9, 0, 0, 0, 23, 17, -1, 5, 18, 10, 19, 0, 20, 11, 21, 3, 22, 12, 0, 0, 0, 23, 24, -1, 4, 19, 0, 20, 11, 21, 3, 22, 12, 0, 0, 0, 23, 25, -1, 5, 18, 13, 19, 0, 20, 11, 21, 3, 22, 12, 0, 0, 0, 23, 26, -1, 5, 18, 14, 19, 0, 20, 11, 21, 3, 22, 12, 0, 0, 0, 27, 27, -1, 8, 1, 15, 2, 16, 3, 17, 4, 0, 28, 18, 29, 19, 30, 20, 31, 21, 0, 7, 0, 10, 10, -1, 4, 11, 22, 12, 16, 13, 0, 14, 7, 0, 7, 0, 32, 32, -1, 17, 33, 23, 34, 0, 35, 15, 36, 24, 37, 7, 38, 25, 39, 26, 40, 27, 41, 28, 42, 29, 43, 30, 44, 21, 45, 29, 46, 30, 47, 0, 48, 0, 49, 15, 0 </int_array>
 			<string> "variants" </string>
-			<array  len="34" shared="false">
+			<array  len="31" shared="false">
 				<bool> False </bool>
 				<resource  resource_type="Shape2D" path="local://1">  </resource>
 				<matrix32> 1, -0, 0, 1, -0.487671, -6.33975 </matrix32>
@@ -121,9 +118,6 @@
 				<real> -43 </real>
 				<real> 0 </real>
 				<real> 100 </real>
-				<real> -102 </real>
-				<real> 17 </real>
-				<real> -62 </real>
 			</array>
 			<string> "version" </string>
 			<int> 2 </int>

@@ -16,4 +16,4 @@ func _on_Area2D_area_enter( area ):
 		queue_free()
 
 func _on_ProgressBar_value_changed( value ):
-	pass # replace with function body
+	pass

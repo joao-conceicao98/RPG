@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <resource_file type="PackedScene" subresource_count="6" version="2.1" version_name="Godot Engine v2.1.4.stable.official">
 	<ext_resource path="res://scripts/world.gd" type="Script" index="0"></ext_resource>
-	<ext_resource path="res://scene/Tileset.xml" type="TileSet" index="2"></ext_resource>
-	<ext_resource path="res://scene/floor1.xml" type="TileSet" index="1"></ext_resource>
 	<ext_resource path="res://scene/player.xml" type="PackedScene" index="4"></ext_resource>
 	<ext_resource path="res://scene/inimigo.xml" type="PackedScene" index="3"></ext_resource>
+	<ext_resource path="res://scene/Tileset.xml" type="TileSet" index="2"></ext_resource>
+	<ext_resource path="res://scene/floor1.xml" type="TileSet" index="1"></ext_resource>
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "conn_count" </string>
