@@ -100,7 +100,7 @@ func _fixed_process(delta):
 		PlayerAnimNode.play(anim)
 
 func ataque_1():
-	ataque1_timer.start()
+	#ataque1_timer.start()
 	var a1 = ataque1.instance()
 	ataques.add_child(a1)
 	a1.start_at(RayNodeFinal.get_rot(), get_pos())
