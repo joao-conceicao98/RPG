@@ -5,6 +5,8 @@ onready var ataques = get_node("ataques")
 
 onready var ataque1_timer = get_node("ataque1_timer")
 
+onready var progressBar = get_node("Area2D/ProgressBar")
+
 #var dmg = 0
 var life = 0
 
@@ -21,7 +23,7 @@ func _fixed_process(delta):
 func _on_Area2D_area_enter( area ):
 	var dmg = get_node("/root/global_player").getPlayerAtaque()
 	life = life - dmg
-	var progressBar = get_node("Area2D/ProgressBar")
+	#var progressBar = get_node("Area2D/ProgressBar")
 	progressBar.set_value(life)
 	if (life <= 0):
 		queue_free()
