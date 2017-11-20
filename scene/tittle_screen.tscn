@@ -1,20 +1,70 @@
-[gd_scene load_steps=3 format=1]
+[gd_scene load_steps=9 format=1]
 
-[ext_resource path="res://imagens/Sem título.png" type="Texture" id=1]
+[ext_resource path="res://imagens/space.png" type="Texture" id=1]
 [ext_resource path="res://scripts/tittle_screen.gd" type="Script" id=2]
+[ext_resource path="res://imagens/New Game.png" type="Texture" id=3]
+[ext_resource path="res://imagens/Options.png" type="Texture" id=4]
+[ext_resource path="res://imagens/Credits.png" type="Texture" id=5]
+[ext_resource path="res://imagens/Exit.png" type="Texture" id=6]
+[ext_resource path="res://imagens/seta.png" type="Texture" id=7]
+[ext_resource path="res://sounds/music/00 intro_0.ogg" type="AudioStream" id=8]
 
 [node name="TextureFrame" type="TextureFrame"]
 
+anchor/right = 1
+anchor/bottom = 1
 focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
 margin/top = 0.0
-margin/right = 640.0
-margin/bottom = 403.0
+margin/right = 0.0
+margin/bottom = 0.0
 texture = ExtResource( 1 )
+expand = true
 stretch_mode = 0
 script/script = ExtResource( 2 )
+
+[node name="NewGame" type="Sprite" parent="."]
+
+transform/pos = Vector2( 420, 330 )
+transform/scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 3 )
+
+[node name="Options" type="Sprite" parent="."]
+
+transform/pos = Vector2( 420, 410 )
+transform/scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 4 )
+
+[node name="Credits" type="Sprite" parent="."]
+
+transform/pos = Vector2( 420, 490 )
+transform/scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 5 )
+
+[node name="Exit" type="Sprite" parent="."]
+
+transform/pos = Vector2( 420, 570 )
+transform/scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 6 )
+
+[node name="Selected" type="Sprite" parent="."]
+
+transform/pos = Vector2( 610, 330 )
+transform/scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 7 )
+
+[node name="StreamPlayer" type="StreamPlayer" parent="."]
+
+stream/stream = ExtResource( 8 )
+stream/play = false
+stream/loop = false
+stream/volume_db = 0.0
+stream/autoplay = false
+stream/paused = false
+stream/loop_restart_time = 0.0
+stream/buffering_ms = 500
 
 

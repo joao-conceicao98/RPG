@@ -5,7 +5,10 @@ export var speed = 1000
 
 func _ready():
 	set_fixed_process(true)
+	get_node("StreamPlayer").play()
+	
 
+#Função que define a posição inicial do ataque
 func start_at(dir, pos):
 	set_rot(dir)
 	set_pos(pos)

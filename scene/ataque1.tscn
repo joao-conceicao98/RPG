@@ -1,18 +1,19 @@
-[gd_scene load_steps=4 format=1]
+[gd_scene load_steps=5 format=1]
 
 [ext_resource path="res://scripts/ataque1.gd" type="Script" id=1]
 [ext_resource path="res://scene/Nebula2.tex" type="Texture" id=2]
+[ext_resource path="res://sounds/sound efects/sound effects/ninja-adventure/1.ogg" type="AudioStream" id=3]
 
 [sub_resource type="CircleShape2D" id=1]
 
 custom_solver_bias = 0.0
-radius = 6.67576
+radius = 36.0555
 
 [node name="ataque1" type="Area2D"]
 
 input/pickable = true
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 3.77052, -3.62744, 2.79317, 2.90334, 0, 0 )
+shapes/0/transform = Matrix32( 0.720647, -0.693302, 0.693302, 0.720647, 0, 40 )
 shapes/0/trigger = false
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -23,13 +24,14 @@ speed = 1000
 
 [node name="Sprite" type="Sprite" parent="."]
 
+transform/pos = Vector2( 0, 40 )
 transform/scale = Vector2( 0.135, 0.142918 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 
+transform/pos = Vector2( 0, 40 )
 transform/rot = 43.8921
-transform/scale = Vector2( 5.23213, 4.02879 )
 shape = SubResource( 1 )
 trigger = false
 _update_shape_index = 0
@@ -40,6 +42,17 @@ process_mode = 1
 wait_time = 0.25
 one_shot = false
 autostart = true
+
+[node name="StreamPlayer" type="StreamPlayer" parent="."]
+
+stream/stream = ExtResource( 3 )
+stream/play = false
+stream/loop = false
+stream/volume_db = 0.0
+stream/autoplay = false
+stream/paused = false
+stream/loop_restart_time = 0.0
+stream/buffering_ms = 500
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 
