@@ -1,20 +1,25 @@
 extends Node
 
-var enemyName = "NAME"
-var enemyLife = 100
-var enemyAtaque = 0
+#inimig1
+var inimigo1_name = "inimigo1"
+var inimigo1_stat = "vivo"
+var inimigo1_life = 100
+var inimigo1_ataque = 5
+#inimigo1
 
-func setEnemyName(name):
-	enemyName = name
-func getEnemyName():
-	return enemyName
+func get_enemy_stat(name):
+	if name == "inimigo1":
+		return inimigo1_stat
 
-func setEnemyLife(life):
-	enemyLife = life
-func getEnemyLife():
-	return enemyLife
+func set_enemy_stat(name, stat):
+	if name == "inimigo1":
+		inimigo1_stat = stat
 
-func setEnemyAtaque(ataque):
-	enemyAtaque = ataque
-func getEnemyAtaque(ataque):
-	return ataque
+
+func get_enemy_life(name):
+	if name == "inimigo1":
+		return inimigo1_life
+
+func get_enemy_ataque(name):
+	if name == "inimigo1":
+		return inimigo1_ataque

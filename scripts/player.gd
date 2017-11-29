@@ -1,5 +1,8 @@
 extends KinematicBody2D
 
+export var life = 100
+onready var progressBar = get_node("ProgressBar")
+
 export var MOTION_SPEED = 140
 const IDLE_SPEED = 10
 
@@ -98,6 +101,10 @@ func _fixed_process(delta):
 	if anim != animNew:
 		animNew = anim
 		PlayerAnimNode.play(anim)
+		
+	
+	#life
+	progressBar.set_value(life)
 
 func ataque_1():
 	ataque1_timer.start()
@@ -105,3 +112,11 @@ func ataque_1():
 	ataques.add_child(a1)
 	a1.start_at(RayNodeFinal.get_rot(), get_pos())
 	get_node("/root/global_player").setPlayerAtaque(20)
+
+func _on_ProgressBar_value_changed( value ):
+	pass # replace with function body
+
+
+func _on_area_player_area_enter( area ):
+	if area.get_name() == "picos":
+		life = life - 5

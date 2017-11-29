@@ -26,13 +26,13 @@ func _input(event):
 			get_node("Selected").set_pos(Vector2(x,y))
 	if event.is_action("ui_accept") && event.is_pressed() && !event.is_echo():
 		if (index == 0):
-			print("menu1")
+			#print("menu1")
 			emit_signal("menu_closed")
 			queue_free()
 		if (index == 1):
-			print("menu2")
+			#print("menu2")
 			emit_signal("menu_closed")
 			queue_free()
 		if (index == 2):
-			print("exit")
+			#print("exit")
 			OS.get_main_loop().quit()
