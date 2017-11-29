@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-export var MOTION_SPEED = 140
+export var MOTION_SPEED = 500
 const IDLE_SPEED = 10
 
 func _ready():
@@ -10,13 +10,11 @@ func _fixed_process(delta):
 	#motion
 	var motion = Vector2()
 	
-	if (Input.is_action_pressed("sprint")):
-		MOTION_SPEED = 300
-	else:
-		MOTION_SPEED = 140
+	
 	
 	if (Input.is_action_pressed("ui_up")):
 		motion +=  Vector2(0,-1)
+	
 	
 	if (Input.is_action_pressed("ui_down")):
 		motion +=  Vector2(0,1)

@@ -30,7 +30,7 @@ func _on_Area2D_area_enter( area ):
 		get_node("/root/global_battle").set_enemy_path(self_path) #prepara o path do inimigo para a batalha
 		#emit_signal("battle")
 		#print(get_node("/root/global_battle").get_enemy_path())
-		get_node("/root/globals").setScene("res://scene/space.tscn")
+		get_node("/root/globals").setScene("res://scene/Battle.tscn")
 
 
 func _on_ProgressBar_changed():
