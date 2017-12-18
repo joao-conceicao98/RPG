@@ -67,4 +67,36 @@ stream/paused = false
 stream/loop_restart_time = 0.0
 stream/buffering_ms = 500
 
+[node name="New_Game" type="TouchScreenButton" parent="."]
+
+transform/pos = Vector2( 280, 290 )
+transform/scale = Vector2( 280, 80 )
+normal = null
+pressed = null
+bitmask = null
+shape = null
+shape_centered = true
+shape_visible = true
+passby_press = false
+action = ""
+visibility_mode = 0
+
+[node name="Exit 2" type="TouchScreenButton" parent="."]
+
+transform/pos = Vector2( 280, 530 )
+transform/scale = Vector2( 280, 80 )
+normal = null
+pressed = null
+bitmask = null
+shape = null
+shape_centered = true
+shape_visible = true
+passby_press = false
+action = ""
+visibility_mode = 0
+
+[connection signal="pressed" from="New_Game" to="." method="_on_New_Game_pressed"]
+
+[connection signal="pressed" from="Exit 2" to="." method="_on_Exit_2_pressed"]
+
 

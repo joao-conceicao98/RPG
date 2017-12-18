@@ -1,9 +1,54 @@
-[gd_scene load_steps=4 format=1]
+[gd_scene load_steps=13 format=1]
 
 [ext_resource path="res://scripts/spaceShip.gd" type="Script" id=1]
 [ext_resource path="res://imagens/space ship/png/player.png" type="Texture" id=2]
 
-[sub_resource type="RectangleShape2D" id=1]
+[sub_resource type="ConvexPolygonShape2D" id=1]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 81.4103, -8.73848, 85.0858, -11.6788, 88.7612, -10.9437, 92.4367, -9.47356, 86.556, 44.923, 78.47, 36.1019, 76.9998, -2.12268 )
+
+[sub_resource type="ConvexPolygonShape2D" id=2]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -77.3688, 39.0423, -83.2495, 47.8634, -88.3951, 38.3072, -94.2758, -9.47356, -86.925, -12.4139, -80.3092, -10.9437, -78.839, -3.59286 )
+
+[sub_resource type="ConvexPolygonShape2D" id=3]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 67.4437, 2.28786, 76.9998, -2.12268, 78.47, 36.1019, 66.7086, 39.7774, 21.8682, 48.5984 )
+
+[sub_resource type="ConvexPolygonShape2D" id=4]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -22.9723, -20.4999, -16.3564, -66.0754, 15.9875, -66.0754, 21.8682, -20.4999, 21.8682, 48.5984 )
+
+[sub_resource type="ConvexPolygonShape2D" id=5]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -77.3688, 39.0423, -78.839, -3.59286, -75.8987, 0.0825806 )
+
+[sub_resource type="ConvexPolygonShape2D" id=6]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -61.9319, 42.7177, -77.3688, 39.0423, -75.8987, 0.0825806, -68.5478, 1.55276, 21.8682, 48.5984, -25.9126, 47.1283 )
+
+[sub_resource type="ConvexPolygonShape2D" id=7]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 21.8682, -20.4999, 67.4437, 2.28786, 21.8682, 48.5984 )
+
+[sub_resource type="ConvexPolygonShape2D" id=8]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -68.5478, 1.55276, -22.9723, -20.4999, 21.8682, 48.5984 )
+
+[sub_resource type="ConvexPolygonShape2D" id=9]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -14.8863, 66.2406, -25.9126, 47.1283, 21.8682, 48.5984, 13.7822, 66.2406 )
+
+[sub_resource type="RectangleShape2D" id=10]
 
 custom_solver_bias = 0.0
 extents = Vector2( 60, 60 )
@@ -11,11 +56,38 @@ extents = Vector2( 60, 60 )
 [node name="spaceShip" type="KinematicBody2D"]
 
 input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+shapes/1/shape = SubResource( 2 )
+shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/1/trigger = false
+shapes/2/shape = SubResource( 3 )
+shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/2/trigger = false
+shapes/3/shape = SubResource( 4 )
+shapes/3/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/3/trigger = false
+shapes/4/shape = SubResource( 5 )
+shapes/4/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/4/trigger = false
+shapes/5/shape = SubResource( 6 )
+shapes/5/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/5/trigger = false
+shapes/6/shape = SubResource( 7 )
+shapes/6/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/6/trigger = false
+shapes/7/shape = SubResource( 8 )
+shapes/7/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/7/trigger = false
+shapes/8/shape = SubResource( 9 )
+shapes/8/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/8/trigger = false
 collision/layers = 1
 collision/mask = 1
 collision/margin = 0.08
 script/script = ExtResource( 1 )
-MOTION_SPEED = 500
+MOTION_SPEED = 5000
 
 [node name="Sprite" type="Sprite" parent="."]
 
@@ -43,8 +115,9 @@ drag_margin/bottom = 0.0
 
 [node name="spaceShip" type="Area2D" parent="."]
 
+editor/display_folded = true
 input/pickable = true
-shapes/0/shape = SubResource( 1 )
+shapes/0/shape = SubResource( 10 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 gravity_vec = Vector2( 0, 1 )
@@ -54,8 +127,23 @@ angular_damp = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="spaceShip"]
 
-shape = SubResource( 1 )
+shape = SubResource( 10 )
 trigger = false
 _update_shape_index = 0
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+
+transform/rot = -180.0
+enabled = false
+cast_to = Vector2( 0, 50 )
+layer_mask = 1
+type_mask = 15
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+
+build_mode = 0
+polygon = Vector2Array( -16.3564, -66.0754, 15.9875, -66.0754, 21.8682, -20.4999, 67.4437, 2.28786, 76.9998, -2.12268, 81.4103, -8.73848, 85.0858, -11.6788, 88.7612, -10.9437, 92.4367, -9.47356, 86.556, 44.923, 78.47, 36.1019, 66.7086, 39.7774, 21.8682, 48.5984, 13.7822, 66.2406, -14.8863, 66.2406, -25.9126, 47.1283, -61.9319, 42.7177, -77.3688, 39.0423, -83.2495, 47.8634, -88.3951, 38.3072, -94.2758, -9.47356, -86.925, -12.4139, -80.3092, -10.9437, -78.839, -3.59286, -75.8987, 0.0825806, -68.5478, 1.55276, -22.9723, -20.4999 )
+shape_range = Vector2( 0, 8 )
+trigger = false
 
 

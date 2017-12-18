@@ -1,0 +1,96 @@
+[gd_scene format=1]
+
+[node name="NPC_Neptanas_1" type="KinematicBody2D"]
+
+input/pickable = false
+collision/layers = 1
+collision/mask = 1
+collision/margin = 0.08
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+
+animation = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+trigger = false
+_update_shape_index = -1
+
+[node name="Area_NPC" type="Area2D" parent="."]
+
+input/pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area_NPC"]
+
+trigger = false
+_update_shape_index = -1
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+
+polygon = Vector2Array(  )
+uv = Vector2Array(  )
+color = Color( 1, 1, 1, 1 )
+vertex_colors = ColorArray(  )
+offset = Vector2( 0, 0 )
+texture/texture = null
+texture/offset = Vector2( 0, 0 )
+texture/scale = Vector2( 1, 1 )
+texture/rotation = 0.0
+invert/enable = false
+invert/border = 100.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Polygon2D"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 40.0
+margin/bottom = 40.0
+bbcode/enabled = false
+bbcode/bbcode = ""
+visible_characters = -1
+percent_visible = 1.0
+
+[node name="Timer" type="Timer" parent="Polygon2D"]
+
+process_mode = 1
+wait_time = 1.0
+one_shot = false
+autostart = false
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+
+enabled = false
+cast_to = Vector2( 0, 50 )
+layer_mask = 1
+type_mask = 15
+
+[node name="RayCast2D1" type="RayCast2D" parent="."]
+
+enabled = false
+cast_to = Vector2( 0, 50 )
+layer_mask = 1
+type_mask = 15
+
+[node name="RayCast2D2" type="RayCast2D" parent="."]
+
+enabled = false
+cast_to = Vector2( 0, 50 )
+layer_mask = 1
+type_mask = 15
+
+[node name="RayCast2D3" type="RayCast2D" parent="."]
+
+enabled = false
+cast_to = Vector2( 0, 50 )
+layer_mask = 1
+type_mask = 15
+
+

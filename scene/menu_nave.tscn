@@ -1,0 +1,49 @@
+[gd_scene load_steps=6 format=1]
+
+[ext_resource path="res://imagens/MENU/menu.png" type="Texture" id=1]
+[ext_resource path="res://scripts/menu.gd" type="Script" id=2]
+[ext_resource path="res://imagens/MENU/menu1.png" type="Texture" id=3]
+[ext_resource path="res://imagens/MENU/exit.png" type="Texture" id=4]
+[ext_resource path="res://imagens/MENU/seta.png" type="Texture" id=5]
+
+[node name="TextureFrame" type="TextureFrame"]
+
+rect/scale = Vector2( 5, 5 )
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = -382.0
+margin/top = -582.0
+margin/right = -233.0
+margin/bottom = -345.0
+texture = ExtResource( 1 )
+expand = true
+stretch_mode = 0
+script/script = ExtResource( 2 )
+
+[node name="menu1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 82.6528, 44.6473 )
+transform/scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 3 )
+
+[node name="menu2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 82.3738, 80.2618 )
+transform/scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 3 )
+
+[node name="exit" type="Sprite" parent="."]
+
+transform/pos = Vector2( 81.381, 115.318 )
+transform/scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 4 )
+
+[node name="Selected" type="Sprite" parent="."]
+
+transform/pos = Vector2( 37.6253, 43.0663 )
+transform/scale = Vector2( 0.401107, 0.398612 )
+texture = ExtResource( 5 )
+
+

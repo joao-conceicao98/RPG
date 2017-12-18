@@ -6,6 +6,8 @@
 [ext_resource path="res://imagens/MENU/exit.png" type="Texture" id=4]
 [ext_resource path="res://imagens/MENU/seta.png" type="Texture" id=5]
 
+
+
 [node name="TextureFrame" type="TextureFrame"]
 
 focus/ignore_mouse = true

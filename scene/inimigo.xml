@@ -1,7 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resource_file type="PackedScene" subresource_count="5" version="2.1" version_name="Godot Engine v2.1.4.stable.official">
+<resource_file type="PackedScene" subresource_count="39" version="2.1" version_name="Godot Engine v2.1.4.stable.official">
 	<ext_resource path="res://scripts/inimigo.gd" type="Script" index="0"></ext_resource>
-	<ext_resource path="res://sprites/inimigo1.png" type="Texture" index="1"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Neptanas/Enemy/Right/Enemy_R_4.png" type="Texture" index="4"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Neptanas/Enemy/Down/Enemy_D_6.png" type="Texture" index="23"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Neptanas/Enemy/Down/Enemy_D_1.png" type="Texture" index="26"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Neptanas/Enemy/Down/Enemy_D_3.png" type="Texture" index="20"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Neptanas/Enemy/Right/Enemy_R_1.png" type="Texture" index="18"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Neptanas/Enemy/Down/Enemy_D_7.png" type="Texture" index="24"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Neptanas/Enemy/Up/Enemy_U_2.png" type="Texture" index="27"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Neptanas/Enemy/Up/Enemy_U_4.png" type="Texture" index="29"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Neptanas/Enemy/Up/Enemy_U_1.png" type="Texture" index="1"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Neptanas/Enemy/Right/Enemy_R_2.png" type="Texture" index="2"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Neptanas/Enemy/Left/Enemy_L_6.png" type="Texture" index="14"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Neptanas/Enemy/Left/Enemy_L_9.png" type="Texture" index="17"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Neptanas/Enemy/Left/Enemy_L_7.png" type="Texture" index="15"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Neptanas/Enemy/Down/Enemy_D_4.png" type="Texture" index="21"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Neptanas/Enemy/Down/Enemy_D_8.png" type="Texture" index="25"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Neptanas/Enemy/Left/Enemy_L_3.png" type="Texture" index="11"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Neptanas/Enemy/Up/Enemy_U_3.png" type="Texture" index="28"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Neptanas/Enemy/Right/Enemy_R_3.png" type="Texture" index="3"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Neptanas/Enemy/Up/Enemy_U_5.png" type="Texture" index="30"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Neptanas/Enemy/Left/Enemy_L_4.png" type="Texture" index="12"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Neptanas/Enemy/Left/Enemy_L_8.png" type="Texture" index="16"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Neptanas/Enemy/Left/Enemy_L_5.png" type="Texture" index="13"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Neptanas/Enemy/Down/Enemy_D_2.png" type="Texture" index="19"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Neptanas/Enemy/Down/Enemy_D_5.png" type="Texture" index="22"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Neptanas/Enemy/Left/Enemy_L_2.png" type="Texture" index="10"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Neptanas/Enemy/Up/Enemy_U_6.png" type="Texture" index="31"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Neptanas/Enemy/Left/Enemy_L_1.png" type="Texture" index="34"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Neptanas/Enemy/Right/Enemy_R_9.png" type="Texture" index="9"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Neptanas/Enemy/Right/Enemy_R_6.png" type="Texture" index="6"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Neptanas/Enemy/Right/Enemy_R_7.png" type="Texture" index="7"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Neptanas/Enemy/Up/Enemy_U_8.png" type="Texture" index="32"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Neptanas/Enemy/Right/Enemy_R_5.png" type="Texture" index="5"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Neptanas/Enemy/Right/Enemy_R_8.png" type="Texture" index="8"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Neptanas/Enemy/Up/Enemy_U_7.png" type="Texture" index="33"></ext_resource>
 	<resource type="RectangleShape2D" path="local://1">
 		<real name="custom_solver_bias"> 0 </real>
 		<vector2 name="extents"> 19.2053, 17.9021 </vector2>
@@ -9,7 +42,134 @@
 	</resource>
 	<resource type="CircleShape2D" path="local://4">
 		<real name="custom_solver_bias"> 0 </real>
-		<real name="radius"> 26.520414 </real>
+		<real name="radius"> 82.002823 </real>
+
+	</resource>
+	<resource type="SpriteFrames" path="local://5">
+		<array name="animations" len="8" shared="false">
+			<dictionary  shared="false">
+				<string> "frames" </string>
+				<array  len="1" shared="false">
+					<resource  external="1">  </resource>
+				</array>
+				<string> "loop" </string>
+				<bool> True </bool>
+				<string> "name" </string>
+				<string> "Idle_U" </string>
+				<string> "speed" </string>
+				<real> 5 </real>
+			</dictionary>
+			<dictionary  shared="false">
+				<string> "frames" </string>
+				<array  len="8" shared="false">
+					<resource  external="2">  </resource>
+					<resource  external="3">  </resource>
+					<resource  external="4">  </resource>
+					<resource  external="5">  </resource>
+					<resource  external="6">  </resource>
+					<resource  external="7">  </resource>
+					<resource  external="8">  </resource>
+					<resource  external="9">  </resource>
+				</array>
+				<string> "loop" </string>
+				<bool> True </bool>
+				<string> "name" </string>
+				<string> "Walk_R" </string>
+				<string> "speed" </string>
+				<real> 5 </real>
+			</dictionary>
+			<dictionary  shared="false">
+				<string> "frames" </string>
+				<array  len="8" shared="false">
+					<resource  external="10">  </resource>
+					<resource  external="11">  </resource>
+					<resource  external="12">  </resource>
+					<resource  external="13">  </resource>
+					<resource  external="14">  </resource>
+					<resource  external="15">  </resource>
+					<resource  external="16">  </resource>
+					<resource  external="17">  </resource>
+				</array>
+				<string> "loop" </string>
+				<bool> True </bool>
+				<string> "name" </string>
+				<string> "Walk_L" </string>
+				<string> "speed" </string>
+				<real> 5 </real>
+			</dictionary>
+			<dictionary  shared="false">
+				<string> "frames" </string>
+				<array  len="1" shared="false">
+					<resource  external="18">  </resource>
+				</array>
+				<string> "loop" </string>
+				<bool> True </bool>
+				<string> "name" </string>
+				<string> "Idle_R" </string>
+				<string> "speed" </string>
+				<real> 5 </real>
+			</dictionary>
+			<dictionary  shared="false">
+				<string> "frames" </string>
+				<array  len="7" shared="false">
+					<resource  external="19">  </resource>
+					<resource  external="20">  </resource>
+					<resource  external="21">  </resource>
+					<resource  external="22">  </resource>
+					<resource  external="23">  </resource>
+					<resource  external="24">  </resource>
+					<resource  external="25">  </resource>
+				</array>
+				<string> "loop" </string>
+				<bool> True </bool>
+				<string> "name" </string>
+				<string> "Walk_D" </string>
+				<string> "speed" </string>
+				<real> 5 </real>
+			</dictionary>
+			<dictionary  shared="false">
+				<string> "frames" </string>
+				<array  len="1" shared="false">
+					<resource  external="26">  </resource>
+				</array>
+				<string> "loop" </string>
+				<bool> True </bool>
+				<string> "name" </string>
+				<string> "Idle_D" </string>
+				<string> "speed" </string>
+				<real> 5 </real>
+			</dictionary>
+			<dictionary  shared="false">
+				<string> "frames" </string>
+				<array  len="7" shared="false">
+					<resource  external="27">  </resource>
+					<resource  external="28">  </resource>
+					<resource  external="29">  </resource>
+					<resource  external="30">  </resource>
+					<resource  external="31">  </resource>
+					<resource  external="32">  </resource>
+					<resource  external="33">  </resource>
+				</array>
+				<string> "loop" </string>
+				<bool> True </bool>
+				<string> "name" </string>
+				<string> "Walk_U" </string>
+				<string> "speed" </string>
+				<real> 5 </real>
+			</dictionary>
+			<dictionary  shared="false">
+				<string> "frames" </string>
+				<array  len="1" shared="false">
+					<resource  external="34">  </resource>
+				</array>
+				<string> "loop" </string>
+				<bool> True </bool>
+				<string> "name" </string>
+				<string> "Idle_L" </string>
+				<string> "speed" </string>
+				<real> 5 </real>
+			</dictionary>
+		</array>
 
 	</resource>
 	<main_resource>
@@ -17,12 +177,12 @@
 			<string> "conn_count" </string>
 			<int> 2 </int>
 			<string> "conns" </string>
-			<int_array  len="12"> 				7, 0, 61, 60, 2, 0, 9, 0, 63, 62, 2, 0 </int_array>
+			<int_array  len="12"> 				6, 0, 63, 62, 2, 0, 8, 0, 65, 64, 2, 0 </int_array>
 			<string> "editable_instances" </string>
 			<array  len="0" shared="false">
 			</array>
 			<string> "names" </string>
-			<string_array  len="64">
+			<string_array  len="66">
 				<string> "inimigo1" </string>
 				<string> "input/pickable" </string>
 				<string> "shapes/0/shape" </string>
@@ -38,19 +198,18 @@
 				<string> "shape" </string>
 				<string> "trigger" </string>
 				<string> "_update_shape_index" </string>
-				<string> "Sprite" </string>
-				<string> "texture" </string>
-				<string> "Up" </string>
+				<string> "RayNodeUp" </string>
 				<string> "transform/rot" </string>
 				<string> "enabled" </string>
 				<string> "cast_to" </string>
 				<string> "layer_mask" </string>
 				<string> "type_mask" </string>
 				<string> "RayCast2D" </string>
-				<string> "Down" </string>
-				<string> "Right" </string>
-				<string> "Left" </string>
+				<string> "RayNodeDown" </string>
+				<string> "RayNodeRight" </string>
+				<string> "RayNodeLeft" </string>
 				<string> "Area2D" </string>
+				<string> "editor/display_folded" </string>
 				<string> "gravity_vec" </string>
 				<string> "gravity" </string>
 				<string> "linear_damp" </string>
@@ -83,6 +242,9 @@
 				<string> "one_shot" </string>
 				<string> "autostart" </string>
 				<string> "Timer" </string>
+				<string> "AnimatedSprite" </string>
+				<string> "frames" </string>
+				<string> "animation" </string>
 				<string> "_on_Area2D_area_enter" </string>
 				<string> "area_enter" </string>
 				<string> "_on_ProgressBar_changed" </string>
@@ -94,9 +256,9 @@
 			<array  len="0" shared="false">
 			</array>
 			<string> "nodes" </string>
-			<int_array  len="237"> 				-1, -1, 9, 0, -1, 8, 1, 0, 2, 1, 3, 2, 4, 0, 5, 3, 6, 3, 7, 4, 8, 5, 0, 0, 0, 10, 10, -1, 4, 11, 6, 12, 1, 13, 0, 14, 7, 0, 0, 0, 15, 15, -1, 2, 11, 8, 16, 9, 0, 0, 0, 23, 17, -1, 5, 18, 10, 19, 0, 20, 11, 21, 3, 22, 12, 0, 0, 0, 23, 24, -1, 4, 19, 0, 20, 11, 21, 3, 22, 12, 0, 0, 0, 23, 25, -1, 5, 18, 13, 19, 0, 20, 11, 21, 3, 22, 12, 0, 0, 0, 23, 26, -1, 5, 18, 14, 19, 0, 20, 11, 21, 3, 22, 12, 0, 0, 0, 27, 27, -1, 8, 1, 15, 2, 16, 3, 17, 4, 0, 28, 18, 29, 19, 30, 20, 31, 21, 0, 7, 0, 10, 10, -1, 4, 11, 22, 12, 16, 13, 0, 14, 7, 0, 7, 0, 32, 32, -1, 17, 33, 23, 34, 0, 35, 15, 36, 24, 37, 7, 38, 25, 39, 26, 40, 27, 41, 28, 42, 29, 43, 30, 44, 21, 45, 29, 46, 30, 47, 0, 48, 0, 49, 15, 0, 0, 0, 27, 50, -1, 7, 11, 31, 51, 32, 1, 15, 28, 18, 29, 19, 30, 20, 31, 21, 0, 0, 0, 53, 52, -1, 0, 0, 0, 0, 59, 54, -1, 4, 55, 3, 56, 21, 57, 15, 58, 15, 0 </int_array>
+			<int_array  len="241"> 				-1, -1, 9, 0, -1, 8, 1, 0, 2, 1, 3, 2, 4, 0, 5, 3, 6, 3, 7, 4, 8, 5, 0, 0, 0, 10, 10, -1, 4, 11, 6, 12, 1, 13, 0, 14, 7, 0, 0, 0, 21, 15, -1, 5, 16, 8, 17, 0, 18, 9, 19, 3, 20, 10, 0, 0, 0, 21, 22, -1, 4, 17, 0, 18, 9, 19, 3, 20, 10, 0, 0, 0, 21, 23, -1, 5, 16, 11, 17, 0, 18, 9, 19, 3, 20, 10, 0, 0, 0, 21, 24, -1, 5, 16, 12, 17, 0, 18, 9, 19, 3, 20, 10, 0, 0, 0, 25, 25, -1, 9, 26, 13, 1, 13, 2, 14, 3, 15, 4, 0, 27, 16, 28, 17, 29, 18, 30, 19, 0, 6, 0, 10, 10, -1, 4, 11, 20, 12, 14, 13, 0, 14, 7, 0, 6, 0, 31, 31, -1, 17, 32, 21, 33, 0, 34, 13, 35, 22, 36, 7, 37, 23, 38, 24, 39, 25, 40, 26, 41, 27, 42, 28, 43, 19, 44, 27, 45, 28, 46, 0, 47, 0, 48, 13, 0, 0, 0, 25, 49, -1, 7, 11, 29, 50, 30, 1, 13, 27, 16, 28, 17, 29, 18, 30, 19, 0, 0, 0, 52, 51, -1, 0, 0, 0, 0, 58, 53, -1, 4, 54, 3, 55, 19, 56, 13, 57, 13, 0, 0, 0, 59, 59, -1, 3, 11, 31, 60, 32, 61, 33, 0 </int_array>
 			<string> "variants" </string>
-			<array  len="33" shared="false">
+			<array  len="34" shared="false">
 				<bool> False </bool>
 				<resource  resource_type="Shape2D" path="local://1">  </resource>
 				<matrix32> 1, -0, 0, 1, -0.487671, -6.33975 </matrix32>
@@ -105,8 +267,6 @@
 				<resource  external="0">  </resource>
 				<vector2> -0.487671, -6.33975 </vector2>
 				<int> 0 </int>
-				<vector2> -1.46301, -21.9453 </vector2>
-				<resource  external="1">  </resource>
 				<real> 180 </real>
 				<vector2> 0, 50 </vector2>
 				<int> 15 </int>
@@ -130,6 +290,9 @@
 				<real> 100 </real>
 				<vector2> 0, 30 </vector2>
 				<vector2> 0.5, 0.5 </vector2>
+				<vector2> 16.8223, -20 </vector2>
+				<resource  resource_type="SpriteFrames" path="local://5">  </resource>
+				<string> "Idle_U" </string>
 			</array>
 			<string> "version" </string>
 			<int> 2 </int>

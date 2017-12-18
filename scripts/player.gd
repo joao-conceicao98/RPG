@@ -1,15 +1,17 @@
 extends KinematicBody2D
 
 export var life = 100
-onready var progressBar = get_node("ProgressBar")
+onready var progressBar = get_node("GUI/ProgressBar")
 
 export var MOTION_SPEED = 140
 const IDLE_SPEED = 10
 
-onready var ataque1 = preload("res://scene/ataque1.tscn")
+onready var ataque1 = preload("res://scene/player_ataque.tscn")
 onready var ataques = get_node("ataques")
 
 onready var ataque1_timer = get_node("ataque1_timer")
+
+onready var lvlStat = get_node("GUI/lvlStat")
 
 
 var RayNodeFinal
@@ -22,6 +24,8 @@ var RayNodeRight
 var PlayerAnimNode
 var anim = ""
 var animNew = ""
+
+onready var dialog = get_node("dialog")
 
 func _ready():
 	set_fixed_process(true)
@@ -37,13 +41,15 @@ func _ready():
 
 
 func _fixed_process(delta):
+	
+	var dialogPos = dialog.get_global_pos()
+	get_node("/root/global_player").setDialogPos(dialogPos)
+	
 	var motion = Vector2()
 	
 	if (Input.is_action_pressed("ataque1")):
-		get_node("/root/global_player").setPlayerAtaque(20)
 		if (ataque1_timer.get_time_left() == 0):
 			ataque_1()
-			get_node("/root/global_player").setPlayerAtaque(20)
 	
 	#motion
 	
@@ -105,13 +111,17 @@ func _fixed_process(delta):
 	
 	#life
 	progressBar.set_value(life)
+	
+	#lvl
+	var lvl = get_node("/root/global_player").getPlayerlvl()
+	lvlStat.set_bbcode(str(lvl))
 
 func ataque_1():
 	ataque1_timer.start()
 	var a1 = ataque1.instance()
 	ataques.add_child(a1)
-	a1.start_at(RayNodeFinal.get_rot(), get_pos())
-	get_node("/root/global_player").setPlayerAtaque(20)
+	a1.start_at(RayNodeFinal.get_rot(), get_global_pos())
+	#get_node("/root/global_player").setPlayerAtaque(20)
 
 func _on_ProgressBar_value_changed( value ):
 	pass # replace with function body
@@ -120,3 +130,16 @@ func _on_ProgressBar_value_changed( value ):
 func _on_area_player_area_enter( area ):
 	if area.get_name() == "picos":
 		life = life - 5
+	if area.get_name() == "enemy_Neptanas_ataque":
+		var dmg = get_node("/root/global_enemy").get_enemy_ataque("Enemy_Neptanas")
+		#get_node("/root/global_player").setPlayerLife(dmg)
+		life = life - dmg
+	if area.get_name() == "Boss_Neptanas_ataque":
+		var dmg = get_node("/root/global_enemy").get_enemy_ataque("Boss_Neptanas")
+		#get_node("/root/global_player").setPlayerLife(dmg)
+		life = life - dmg
+
+func _on_Life_refresh_timeout():
+	life += get_node("/root/global_player").getPlayerLifeRefresh()
+	if life > 100 :
+		life = 100

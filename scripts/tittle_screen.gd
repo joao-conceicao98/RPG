@@ -31,10 +31,17 @@ func _input(event):
 	if event.is_action("ui_accept") && event.is_pressed() && !event.is_echo():
 		if (index == 0):
 			print("New Game")
-			get_node("/root/globals").setScene("res://scene/world.xml")
+			get_node("/root/globals").setScene("res://scene/Dialog.tscn")
 		if (index == 1):
 			print("Options")
 		if (index == 2):
 			print("Credits")	
 		if(index == 3):
 			OS.get_main_loop().quit()
+
+func _on_New_Game_pressed():
+	get_node("/root/globals").setScene("res://scene/Dialog.tscn")
+
+
+func _on_Exit_2_pressed():
+	OS.get_main_loop().quit()

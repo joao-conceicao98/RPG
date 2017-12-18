@@ -1,0 +1,99 @@
+[gd_scene load_steps=5 format=1]
+
+[ext_resource path="res://scene/npc1.gd" type="Script" id=1]
+[ext_resource path="res://icon.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 31.9202, 31.9971 )
+
+[sub_resource type="CircleShape2D" id=2]
+
+custom_solver_bias = 0.0
+radius = 80.4674
+
+[node name="NPC1" type="KinematicBody2D"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+collision/margin = 0.08
+script/script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="Area_NPC" type="Area2D" parent="."]
+
+input/pickable = true
+shapes/0/shape = SubResource( 2 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area_NPC"]
+
+shape = SubResource( 2 )
+trigger = false
+_update_shape_index = 0
+
+[node name="dialog_bar" type="Polygon2D" parent="."]
+
+visibility/visible = false
+visibility/opacity = 0.6
+transform/pos = Vector2( 1.80499, -3.61 )
+polygon = Vector2Array( -34.4476, -60.7093, -34.4476, -35.4393, 27.8247, -35.4393, 27.8247, -60.7093 )
+uv = Vector2Array(  )
+color = Color( 0.476563, 0.448627, 0.448639, 1 )
+vertex_colors = ColorArray(  )
+offset = Vector2( 0, 0 )
+texture/texture = null
+texture/offset = Vector2( 0, 0 )
+texture/scale = Vector2( 1, 1 )
+texture/rotation = 0.0
+invert/enable = false
+invert/border = 100.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="dialog_bar"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = -32.0
+margin/top = -57.0
+margin/right = 23.0
+margin/bottom = -39.0
+bbcode/enabled = false
+bbcode/bbcode = ""
+visible_characters = -1
+percent_visible = 1.0
+
+[node name="Timer" type="Timer" parent="dialog_bar"]
+
+process_mode = 1
+wait_time = 0.05
+one_shot = false
+autostart = true
+
+[connection signal="area_enter" from="Area_NPC" to="." method="_on_Area_NPC_area_enter"]
+
+[connection signal="area_exit" from="Area_NPC" to="." method="_on_Area_NPC_area_exit"]
+
+[connection signal="timeout" from="dialog_bar/Timer" to="." method="_on_Timer_timeout"]
+
+
