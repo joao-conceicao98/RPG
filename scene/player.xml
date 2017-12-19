@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <resource_file type="PackedScene" subresource_count="39" version="2.1" version_name="Godot Engine v2.1.4.stable.official">
-	<ext_resource path="res://scripts/player.gd" type="Script" index="0"></ext_resource>
-	<ext_resource path="res://sprites/Planeta Satínico/Player/Left/Player_L_1.png" type="Texture" index="26"></ext_resource>
-	<ext_resource path="res://sprites/Planeta Satínico/Player/Right/Player_R_9.png" type="Texture" index="34"></ext_resource>
-	<ext_resource path="res://sprites/Planeta Satínico/Player/Right/Player_R_1.png" type="Texture" index="24"></ext_resource>
-	<ext_resource path="res://sprites/Planeta Satínico/Player/Right/Player_R_2.png" type="Texture" index="27"></ext_resource>
-	<ext_resource path="res://sprites/Planeta Satínico/Player/Left/Player_L_7.png" type="Texture" index="14"></ext_resource>
-	<ext_resource path="res://sprites/Planeta Satínico/Player/Up/Player_U_8.png" type="Texture" index="7"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Satínico/Player/Up/Player_U_7.png" type="Texture" index="6"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Satínico/Player/Left/Player_L_1.png" type="Texture" index="34"></ext_resource>
 	<ext_resource path="res://sprites/Planeta Satínico/Player/Down/Player_D_3.png" type="Texture" index="18"></ext_resource>
-	<ext_resource path="res://sprites/Planeta Satínico/Player/Left/Player_L_9.png" type="Texture" index="16"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Satínico/Player/Right/Player_R_2.png" type="Texture" index="24"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Satínico/Player/Left/Player_L_9.png" type="Texture" index="15"></ext_resource>
 	<ext_resource path="res://sprites/Planeta Satínico/Player/Up/Player_U_4.png" type="Texture" index="3"></ext_resource>
 	<ext_resource path="res://sprites/Planeta Satínico/Player/Up/Player_U_3.png" type="Texture" index="2"></ext_resource>
-	<ext_resource path="res://sprites/Planeta Satínico/Player/Right/Player_R_5.png" type="Texture" index="30"></ext_resource>
-	<ext_resource path="res://sprites/Planeta Satínico/Player/Right/Player_R_8.png" type="Texture" index="33"></ext_resource>
 	<ext_resource path="res://sprites/Planeta Satínico/Player/Down/Player_D_5.png" type="Texture" index="20"></ext_resource>
-	<ext_resource path="res://sprites/Planeta Satínico/Player/Up/Player_U_1.png" type="Texture" index="8"></ext_resource>
-	<ext_resource path="res://sprites/Planeta Satínico/Player/Right/Player_R_6.png" type="Texture" index="31"></ext_resource>
-	<ext_resource path="res://sprites/Planeta Satínico/Player/Down/Player_D_1.png" type="Texture" index="25"></ext_resource>
-	<ext_resource path="res://sprites/Planeta Satínico/Player/Left/Player_L_6.png" type="Texture" index="13"></ext_resource>
-	<ext_resource path="res://sprites/Planeta Satínico/Player/Left/Player_L_2.png" type="Texture" index="9"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Satínico/Player/Right/Player_R_9.png" type="Texture" index="31"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Satínico/Player/Down/Player_D_1.png" type="Texture" index="33"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Satínico/Player/Right/Player_R_8.png" type="Texture" index="30"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Satínico/Player/Up/Player_U_1.png" type="Texture" index="16"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Satínico/Player/Right/Player_R_1.png" type="Texture" index="32"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Satínico/Player/Up/Player_U_8.png" type="Texture" index="7"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Satínico/Player/Right/Player_R_6.png" type="Texture" index="28"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Satínico/Player/Left/Player_L_6.png" type="Texture" index="12"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Satínico/Player/Left/Player_L_2.png" type="Texture" index="8"></ext_resource>
 	<ext_resource path="res://sprites/Planeta Satínico/Player/Down/Player_D_8.png" type="Texture" index="23"></ext_resource>
-	<ext_resource path="res://sprites/Planeta Satínico/Player/Up/Player_U_7.png" type="Texture" index="6"></ext_resource>
-	<ext_resource path="res://sprites/Planeta Satínico/Player/Up/Player_U_5.png" type="Texture" index="4"></ext_resource>
-	<ext_resource path="res://sprites/Planeta Satínico/Player/Down/Player_D_4.png" type="Texture" index="19"></ext_resource>
-	<ext_resource path="res://sprites/Planeta Satínico/Player/Right/Player_R_4.png" type="Texture" index="29"></ext_resource>
-	<ext_resource path="res://sprites/Planeta Satínico/Player/Down/Player_D_6.png" type="Texture" index="21"></ext_resource>
-	<ext_resource path="res://sprites/Planeta Satínico/Player/Right/Player_R_7.png" type="Texture" index="32"></ext_resource>
-	<ext_resource path="res://sprites/Planeta Satínico/Player/Left/Player_L_3.png" type="Texture" index="10"></ext_resource>
-	<ext_resource path="res://sprites/Planeta Satínico/Player/Up/Player_U_6.png" type="Texture" index="5"></ext_resource>
-	<ext_resource path="res://sprites/Planeta Satínico/Player/Left/Player_L_8.png" type="Texture" index="15"></ext_resource>
-	<ext_resource path="res://sprites/Planeta Satínico/Player/Left/Player_L_4.png" type="Texture" index="11"></ext_resource>
-	<ext_resource path="res://sprites/Planeta Satínico/Player/Down/Player_D_7.png" type="Texture" index="22"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Satínico/Player/Right/Player_R_5.png" type="Texture" index="27"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Satínico/Player/Left/Player_L_7.png" type="Texture" index="13"></ext_resource>
 	<ext_resource path="res://sprites/Planeta Satínico/Player/Up/Player_U_2.png" type="Texture" index="1"></ext_resource>
-	<ext_resource path="res://sprites/Planeta Satínico/Player/Left/Player_L_5.png" type="Texture" index="12"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Satínico/Player/Down/Player_D_4.png" type="Texture" index="19"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Satínico/Player/Right/Player_R_7.png" type="Texture" index="29"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Satínico/Player/Right/Player_R_3.png" type="Texture" index="25"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Satínico/Player/Up/Player_U_5.png" type="Texture" index="4"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Satínico/Player/Left/Player_L_5.png" type="Texture" index="11"></ext_resource>
 	<ext_resource path="res://sprites/Planeta Satínico/Player/Down/Player_D_2.png" type="Texture" index="17"></ext_resource>
-	<ext_resource path="res://sprites/Planeta Satínico/Player/Right/Player_R_3.png" type="Texture" index="28"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Satínico/Player/Left/Player_L_3.png" type="Texture" index="9"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Satínico/Player/Up/Player_U_6.png" type="Texture" index="5"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Satínico/Player/Right/Player_R_4.png" type="Texture" index="26"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Satínico/Player/Down/Player_D_6.png" type="Texture" index="21"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Satínico/Player/Left/Player_L_4.png" type="Texture" index="10"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Satínico/Player/Down/Player_D_7.png" type="Texture" index="22"></ext_resource>
+	<ext_resource path="res://sprites/Planeta Satínico/Player/Left/Player_L_8.png" type="Texture" index="14"></ext_resource>
+	<ext_resource path="res://scripts/player.gd" type="Script" index="0"></ext_resource>
 	<resource type="RectangleShape2D" path="local://1">
 		<real name="custom_solver_bias"> 0 </real>
 		<vector2 name="extents"> 14.9614, 16 </vector2>
@@ -62,19 +62,8 @@
 			</dictionary>
 			<dictionary  shared="false">
 				<string> "frames" </string>
-				<array  len="1" shared="false">
-					<resource  external="8">  </resource>
-				</array>
-				<string> "loop" </string>
-				<bool> True </bool>
-				<string> "name" </string>
-				<string> "Idle_U" </string>
-				<string> "speed" </string>
-				<real> 5 </real>
-			</dictionary>
-			<dictionary  shared="false">
-				<string> "frames" </string>
 				<array  len="8" shared="false">
+					<resource  external="8">  </resource>
 					<resource  external="9">  </resource>
 					<resource  external="10">  </resource>
 					<resource  external="11">  </resource>
@@ -82,7 +71,6 @@
 					<resource  external="13">  </resource>
 					<resource  external="14">  </resource>
 					<resource  external="15">  </resource>
-					<resource  external="16">  </resource>
 				</array>
 				<string> "loop" </string>
 				<bool> True </bool>
@@ -90,6 +78,18 @@
 				<string> "Walk_L" </string>
 				<string> "speed" </string>
 				<real> 10 </real>
+			</dictionary>
+			<dictionary  shared="false">
+				<string> "frames" </string>
+				<array  len="1" shared="false">
+					<resource  external="16">  </resource>
+				</array>
+				<string> "loop" </string>
+				<bool> True </bool>
+				<string> "name" </string>
+				<string> "Idle_U" </string>
+				<string> "speed" </string>
+				<real> 5 </real>
 			</dictionary>
 			<dictionary  shared="false">
 				<string> "frames" </string>
@@ -111,8 +111,27 @@
 			</dictionary>
 			<dictionary  shared="false">
 				<string> "frames" </string>
-				<array  len="1" shared="false">
+				<array  len="8" shared="false">
 					<resource  external="24">  </resource>
+					<resource  external="25">  </resource>
+					<resource  external="26">  </resource>
+					<resource  external="27">  </resource>
+					<resource  external="28">  </resource>
+					<resource  external="29">  </resource>
+					<resource  external="30">  </resource>
+					<resource  external="31">  </resource>
+				</array>
+				<string> "loop" </string>
+				<bool> True </bool>
+				<string> "name" </string>
+				<string> "Walk_R" </string>
+				<string> "speed" </string>
+				<real> 10 </real>
+			</dictionary>
+			<dictionary  shared="false">
+				<string> "frames" </string>
+				<array  len="1" shared="false">
+					<resource  external="32">  </resource>
 				</array>
 				<string> "loop" </string>
 				<bool> True </bool>
@@ -124,7 +143,7 @@
 			<dictionary  shared="false">
 				<string> "frames" </string>
 				<array  len="1" shared="false">
-					<resource  external="25">  </resource>
+					<resource  external="33">  </resource>
 				</array>
 				<string> "loop" </string>
 				<bool> True </bool>
@@ -136,7 +155,7 @@
 			<dictionary  shared="false">
 				<string> "frames" </string>
 				<array  len="1" shared="false">
-					<resource  external="26">  </resource>
+					<resource  external="34">  </resource>
 				</array>
 				<string> "loop" </string>
 				<bool> True </bool>
@@ -144,25 +163,6 @@
 				<string> "Idle_L" </string>
 				<string> "speed" </string>
 				<real> 5 </real>
-			</dictionary>
-			<dictionary  shared="false">
-				<string> "frames" </string>
-				<array  len="8" shared="false">
-					<resource  external="27">  </resource>
-					<resource  external="28">  </resource>
-					<resource  external="29">  </resource>
-					<resource  external="30">  </resource>
-					<resource  external="31">  </resource>
-					<resource  external="32">  </resource>
-					<resource  external="33">  </resource>
-					<resource  external="34">  </resource>
-				</array>
-				<string> "loop" </string>
-				<bool> True </bool>
-				<string> "name" </string>
-				<string> "Walk_R" </string>
-				<string> "speed" </string>
-				<real> 10 </real>
 			</dictionary>
 		</array>
 
