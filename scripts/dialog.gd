@@ -3,6 +3,13 @@ extends RichTextLabel
 var dialog = ["Olá!",
 "Bem vindo ao meu primeiro jogo",
 "Este jogo foi criado para a cadeira de PI",
+"Para o player andar usa as setas do teclado",
+"Para disparar o teu ataque usa a tecla \"1\" ",
+"Existem 4 planetas no total:",
+"Satinico (o teu planeta)",
+"Neptanas",
+"Jupitar (desbloqueado quando o Boss do planeta Neptanas for derrotado)",
+"E BDI (desbloqueado quando o Boss do planeta Jupitar for derrotado)",
 "Estás pronto?",
 "Bora!"
 ]
